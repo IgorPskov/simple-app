@@ -1,13 +1,13 @@
 Простой REST API на Flask с диагностикой сервера, упаковкой в Docker и готовым Compose.
 
-Локальный запуск
+<b>Локальный запуск</b>
 
 python -m venv venv
 pip install -r app/requirements.txt
 python app/main.py
 Сервер: http://localhost:5000
 
-Доступные эндпоинты:
+<b>Доступные эндпоинты:</b>
 
 GET / → {"message":"Hello, World!"}
 
@@ -21,11 +21,12 @@ GET /api/users/<id> → получить пользователя
 
 DELETE /api/users/<id> → удалить
 
-Тесты
+
+<b>Тесты</b>
 
 pytest app/tests/test_app.py -v
 
-Скрипт диагностики
+Скрипт диагностики</b>
 
 chmod +x scripts/server-info.sh
 
@@ -38,7 +39,8 @@ chmod +x scripts/server-info.sh
 Выводит системную информацию, ресурсы, Docker-контейнеры и проверяет доступность указанных сервисов.
 Лог пишется в server-info.log. Возвращает 1, если хотя бы один сервис недоступен.
 
-Docker
+
+<b>Docker</b>
 
 docker build -t simple-app:latest.
 
@@ -47,7 +49,7 @@ docker run -d -p 5000:5000 --name simple-app simple-app:latest
 curl http://localhost:5000/health
 
 
-Docker Compose
+<b>Docker Compose</b>
 
 docker-compose up -d
 
