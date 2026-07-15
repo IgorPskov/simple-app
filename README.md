@@ -1,18 +1,5 @@
 Простой REST API на Flask с диагностикой сервера, упаковкой в Docker и готовым Compose.
 
-Структура
-
-├── app/
-│   ├── main.py              # Flask API
-│   ├── requirements.txt
-│   └── tests/
-│       └── test_app.py
-├── scripts/
-│   └── server-info.sh       # диагностика и проверка сервисов
-├── Dockerfile
-├── docker-compose.yml
-└── README.md
-
 Локальный запуск
 
 python -m venv venv
